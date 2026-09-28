@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="Assignment.css">
+</head>
+<body>
+    <h1>FSD Workshop Quiz</h1>
+
+   
+    <form id="registrationForm">
+        <label for="name">Enter Your Name</label>
+        <input type="text" id="name" required>
+
+        <label for="rollNumber">Enter Your University Roll Number</label>
+        <input type="number" id="rollNumber" required>
+
+        <label for="branch">Enter Your Branch</label>
+        <select id="branch" required>
+            <option value="">--Select Branch--</option>
+            <option value="cse-ds-a">Cse Ds Branch A</option>
+            <option value="cse-ds-b">Cse Ds Branch B</option>
+            <option value="cse-ds-c">Cse Ds Branch C</option>
+        </select>
+
+        <button type="button" id="startBtn">Start Quiz</button>
+    </form>
+
+  
+    <div id="quizSection" style="display:none;">
+        <h2 id="userInfo"></h2>
+        <div id="questions"></div>
+        <button type="button" id="submitBtn">Submit Quiz</button>
+    </div>
+
+  
+    <div id="resultSection" style="display:none;">
+        <h2>Your Result</h2>
+        <p id="scoreText"></p>
+        <button type="button" id="restartBtn">Restart</button>
+    </div>
+
+    <script src="Assignment.js"></script>
+</body>
+</html>
